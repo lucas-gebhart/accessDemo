@@ -1,0 +1,751 @@
+# Objects found inside `openslim-v373b0.mdb`
+
+Extracted with `mdb-export openslim.mdb MSysObjects` (mdbtools).
+
+## Linked table (ODBC -> SQL Server) (72)
+
+- `RelClosedProgressReports2Issues`
+- `RelClosedProgressReports2Tasks`
+- `RelNodes2Environments`
+- `RelNodes2EnvironmentsHistory`
+- `RelNodes2Nodes`
+- `RelNodes2NodesHistory`
+- `RelNodes2Roles`
+- `RelNodes2RolesHistory`
+- `RelProgressReports2Issues`
+- `RelProgressReports2IssuesHistory`
+- `RelProgressReports2Tasks`
+- `RelProgressReports2TasksHistory`
+- `RelProjects2Environments`
+- `RelProjects2EnvironmentsHistory`
+- `RelProjects2Nodes`
+- `RelProjects2NodesHistory`
+- `TblActionStatus`
+- `TblArchitectureTypes`
+- `TblBusinessAreas`
+- `TblClusterTypes`
+- `TblCpuTypes`
+- `TblDataCenterLocations`
+- `TblDecommissioning`
+- `TblDecommissioningHistory`
+- `TblDecommissioningWorkflowStatus`
+- `TblDeliveryStatus`
+- `TblDnsZones`
+- `TblEnvironments`
+- `TblImpacts`
+- `TblIssues`
+- `TblIssuesHistory`
+- `TblKpiStatus`
+- `TblMajorPatchLevels`
+- `TblMaturityStatus`
+- `TblNetworks`
+- `TblNodeStatus`
+- `TblNodeTypes`
+- `TblNodes`
+- `TblNodesHistory`
+- `TblPriorities`
+- `TblProductionScopes`
+- `TblProgressReports`
+- `TblProgressReportsHistory`
+- `TblProjectStatus`
+- `TblProjects`
+- `TblProjectsHistory`
+- `TblProvisioningProjectDetails`
+- `TblProvisioningProjectDetailsHistory`
+- `TblProvisioningProjects`
+- `TblProvisioningProjectsHistory`
+- `TblRackLocations`
+- `TblRelationshipType`
+- `TblRepairWorkflowStatus`
+- `TblRepairs`
+- `TblRepairsHistory`
+- `TblRiskType`
+- `TblRoles`
+- `TblSecurityClass`
+- `TblSecurityDomains`
+- `TblSecurityLevel`
+- `TblServiceCoverage`
+- `TblSuppliers`
+- `TblSystemType`
+- `TblTaskCategories`
+- `TblTasks`
+- `TblTasksHistory`
+- `TblTeams`
+- `TblUpdaters`
+- `TblUpdatersHistory`
+- `TblVirtualDataCenters`
+- `TblVisibilities`
+- `TblWorkStreams`
+
+## Saved query (586)
+
+- `Issues_ProgressByPeriod_LiveIssues`
+- `Issues_ProgressByPeriod_LiveIssues_Age`
+- `Issues_ProgressByPeriod_Risks`
+- `Issues_ProgressByPeriod_RisksAge`
+- `Issues_ProgressByPeriod_Severity`
+- `Issues_ProgressByPeriod_SeverityAge`
+- `Issues_ProgressByPeriod_SeverityAge_ActionStatus`
+- `Issues_ProgressByPeriod_Severity_ActionStatus`
+- `Nodes_Decommissioning_Completed_Detail`
+- `Nodes_Decommissioning_Completed_QuantizedEndDate_Owner`
+- `Nodes_Decommissioning_Completed_QuantizedEndDate_Project`
+- `Nodes_Decommissioning_Completed_QuantizedEndDate_Supplier`
+- `Nodes_Decommissioning_Completed_QuantizedStartDate_Owner`
+- `Nodes_Decommissioning_Completed_QuantizedStartDate_Project`
+- `Nodes_Decommissioning_Completed_QuantizedStartDate_Supplier`
+- `Nodes_Decommissioning_Pending_Detail`
+- `Nodes_Decommissioning_Pending_QuantizedStartDate_Owner`
+- `Nodes_Decommissioning_Pending_QuantizedStartDate_Project`
+- `Nodes_Decommissioning_Pending_QuantizedStartDate_Supplier`
+- `Nodes_Decommissioning_Pending_Relevance_ByProject`
+- `Nodes_History_Summary_Status_Decomissioned`
+- `Nodes_Repairs_Pending_Detail`
+- `Nodes_Repairs_Pending_QuantizedStartDate_Owner`
+- `Nodes_Repairs_Pending_QuantizedStartDate_Project`
+- `Nodes_Repairs_Pending_QuantizedStartDate_Supplier`
+- `Nodes_Repairs_Pending_Relevance_ByProject`
+- `Nodes_Repairs_Repaired_Detail`
+- `Nodes_Repairs_Repaired_QuantizedEndDate_Owner`
+- `Nodes_Repairs_Repaired_QuantizedEndDate_Project`
+- `Nodes_Repairs_Repaired_QuantizedEndDate_Supplier`
+- `Nodes_Repairs_Repaired_QuantizedStartDate_Owner`
+- `Nodes_Repairs_Repaired_QuantizedStartDate_Project`
+- `Nodes_Repairs_Repaired_QuantizedStartDate_Supplier`
+- `Nodes_Storage_SAN_NodesByEnvironment`
+- `Nodes_Storage_SAN_NodesByProject`
+- `Nodes_Storage_SAN_NodesByRole`
+- `Nodes_Storage_SAN_NodesBySystemType`
+- `Nodes_Storage_SAN_Wintel_NodesByEnvironment`
+- `Nodes_Storage_SAN_Wintel_NodesByNodeType`
+- `Nodes_Storage_SAN_Wintel_NodesByProject`
+- `Nodes_Storage_SAN_Wintel_NodesByRole`
+- `Nodes_Storage_SAN_Wintel_NodesBySystemType`
+- `Nodes_Summary_ActiveNodes`
+- `Nodes_Summary_Chassis_FreeSlots_BySupplier_Location`
+- `Nodes_Summary_Chassis_FreeSlots_Detail`
+- `Nodes_Summary_NodesByBusinessArea`
+- `Nodes_Summary_NodesByBusinessArea_Projects`
+- `Nodes_Summary_NodesByBusinessArea_ServiceManager`
+- `Nodes_Summary_NodesByBusinessArea_ServiceManager_Projects`
+- `Nodes_Summary_NodesByEnvironment`
+- `Nodes_Summary_NodesByLocation`
+- `Nodes_Summary_NodesByNodeStatus`
+- `Nodes_Summary_NodesByNodeType`
+- `Nodes_Summary_NodesByPotentialSubNets`
+- `Nodes_Summary_NodesByProject`
+- `Nodes_Summary_NodesByRole`
+- `Nodes_Summary_NodesBySupplier`
+- `Nodes_Summary_NodesBySystemType`
+- `Nodes_Summary_TotalNodes`
+- `Nodes_Summary_TotalNodes_QuantizedCreationDate`
+- `Nodes_Summary_TotalRoles`
+- `Nodes_Summary_Wintel_NodesByBusinessArea`
+- `Nodes_Summary_Wintel_NodesByBusinessArea_Projects`
+- `Nodes_Summary_Wintel_NodesByEnvironment`
+- `Nodes_Summary_Wintel_NodesByPotentialSubNets`
+- `Nodes_Summary_Wintel_NodesByProject`
+- `Nodes_Summary_Wintel_NodesByRole`
+- `Nodes_Summary_Wintel_NodesBySupplier`
+- `Nodes_Summary_Wintel_TotalNodes`
+- `Nodes_Summary_Wintel_TotalNodes_QuantizedCreationDate`
+- `Project_ClosedTasks`
+- `Project_ClosedTasks_ActivityType`
+- `Project_ClosedTasks_Relevance`
+- `Project_ClosedTasks_ReschedulingCount`
+- `Project_ClosedTasks_ResourcesInvolved`
+- `Project_ClosedTasks_Status`
+- `Project_ClosedTasks_StatusKPI`
+- `Project_ClosedTasks_WorkTime`
+- `Project_Tasks`
+- `Project_Tasks_ActivityType`
+- `Project_Tasks_Relevance`
+- `Project_Tasks_ReschedulingCount`
+- `Project_Tasks_ResourcesInvolved`
+- `Project_Tasks_Status`
+- `Project_Tasks_StatusKPI`
+- `Project_Tasks_WorkTime`
+- `Projects_OrphanProjects`
+- `Projects_TotalProjects`
+- `Projects_TotalProjectsByServiceManager`
+- `ProvisioningProjects_Delivered_Detail`
+- `ProvisioningProjects_Delivered_QuantizedEndDate`
+- `ProvisioningProjects_Delivered_QuantizedEndDate_Project`
+- `ProvisioningProjects_Delivered_QuantizedEndDate_Project_Detail`
+- `ProvisioningProjects_Delivered_QuantizedEndDate_TotalNodes`
+- `ProvisioningProjects_Delivered_QuantizedStartDate`
+- `ProvisioningProjects_Delivered_QuantizedStartDate_Project`
+- `ProvisioningProjects_Delivered_QuantizedStartDate_Project_Detail`
+- `ProvisioningProjects_Delivered_QuantizedStartDate_TotalNodes`
+- `ProvisioningProjects_Pending_Detail`
+- `ProvisioningProjects_Pending_QuantizedStartDate`
+- `ProvisioningProjects_Pending_QuantizedStartDate_Project`
+- `ProvisioningProjects_Pending_QuantizedStartDate_Project_Detail`
+- `ProvisioningProjects_Pending_QuantizedStartDate_TotalNodes`
+- `Tasks_ProgressReport_Simple`
+- `Tasks_TeamProgressByPeriod_ActivityType`
+- `Tasks_TeamProgressByPeriod_EffortAndDedication`
+- `Tasks_TeamProgressByPeriod_EffortAndDedication_Projects`
+- `Tasks_TeamProgressByPeriod_Impact`
+- `Tasks_TeamProgressByPeriod_Priority`
+- `Tasks_TeamProgressByPeriod_Priority_Projects`
+- `Tasks_TeamProgressByPeriod_Progress`
+- `Tasks_TeamProgressByPeriod_Progress_AvailableResCount`
+- `Tasks_TeamProgressByPeriod_Project`
+- `Tasks_TeamProgressByPeriod_Relevance`
+- `Tasks_TeamProgressByPeriod_Rescheduling`
+- `Tasks_TeamProgressByPeriod_Rescheduling_Projects`
+- `Tasks_TeamProgressByPeriod_TeamActivity`
+- `Tasks_TeamProgressByPeriod_TeamActivity_AvailableResCount`
+- `Tasks_TeamProgressByPeriod_TeamActivity_TeamMember`
+- `Tasks_TeamProgressByPeriod_Unplanned`
+- `Tasks_TeamProgressByPeriod_Unpplanned_ActivityType`
+- `Tasks_TeamProgressByPeriod_Unpplanned_Projects`
+- `Tasks_TeamProgressByPeriod_Visibility`
+- `TeamMember_ClosedTasks`
+- `TeamMember_ClosedTasks_ActivityType`
+- `TeamMember_ClosedTasks_Project`
+- `TeamMember_ClosedTasks_Relevance`
+- `TeamMember_ClosedTasks_ReschedulingCount`
+- `TeamMember_ClosedTasks_ResourcesInvolved`
+- `TeamMember_ClosedTasks_Status`
+- `TeamMember_ClosedTasks_StatusKPIs`
+- `TeamMember_ClosedTasks_WorkTime`
+- `TeamMember_Tasks`
+- `TeamMember_Tasks_ActivityType`
+- `TeamMember_Tasks_Project`
+- `TeamMember_Tasks_Relevance`
+- `TeamMember_Tasks_ReschedulingCount`
+- `TeamMember_Tasks_ResourcesInvolved`
+- `TeamMember_Tasks_Status`
+- `TeamMember_Tasks_StatusKPIs`
+- `TeamMember_Tasks_WorkTime`
+- `Team_ClosedTasks_ActivityType`
+- `Team_ClosedTasks_Age_Priority`
+- `Team_ClosedTasks_Age_Project`
+- `Team_ClosedTasks_Age_Project_Priority`
+- `Team_ClosedTasks_Priority`
+- `Team_ClosedTasks_Project`
+- `Team_ClosedTasks_Project_Priority`
+- `Team_ClosedTasks_ReschedulingCount_Project`
+- `Team_ClosedTasks_ReschedulingCount_Project_Priority`
+- `Team_LiveIssues_Age`
+- `Team_LiveIssues_RisksMap`
+- `Team_LiveTasks_Age_Priority`
+- `Team_LiveTasks_Age_Progress`
+- `Team_LiveTasks_Age_Project`
+- `Team_LiveTasks_Age_Project_Priority`
+- `Team_LiveTasks_Age_Project_Progress`
+- `Team_LiveTasks_Age_QuantizedProgress`
+- `Team_LiveTasks_ReschedulingCount_Project`
+- `Team_LiveTasks_ReschedulingCount_Project_Priority`
+- `Team_LiveTasks_ReschedulingCount_Project_Progress`
+- `Team_LiveTasks_ReschedulingCount_Project_QuantizedProgress`
+- `Team_Summary_Issues`
+- `Team_Summary_Issues_Age`
+- `Team_Summary_ManagedRisks`
+- `Team_Summary_TasksActivityType`
+- `Team_Summary_TasksActivityType_Project`
+- `Team_Summary_TasksRelevanceMap`
+- `Team_Summary_TasksRelevanceMap_Project`
+- `_DecommissioningManagement`
+- `_GetAllForms`
+- `_GetAllQueries`
+- `_GetAllReports`
+- `_GetAllTools`
+- `_GetHypervisor`
+- `_Import_ForeignCmdbId`
+- `_IssuesBasicList`
+- `_NodesBasicList`
+- `_ProvisioningProjectDetailsBasicList`
+- `_ProvisioningProjectDetailsHistoryView`
+- `_QueryAllNodes`
+- `_QueryGetProgressReports`
+- `_QueryRelNodes2Nodes`
+- `_QueryRelProgressReports2Issues`
+- `_QueryRelProgressReports2Tasks`
+- `_QueryRelProjects2Environments`
+- `_QueryRelProjects2Nodes`
+- `_RepairsManagement`
+- `_ReportOpenedButPendingTasksList`
+- `_ReportRelClosedProgressReports2Tasks`
+- `_ReportRelProgressReports2Tasks`
+- `_ReportRelProgressReports2Tasks_TeamMemberTasksList`
+- `_TasksBasicList`
+- `~sq_cContacts Management~sq_cTeamId`
+- `~sq_cDecommissioning Management~sq_cBudgetStatusKPI`
+- `~sq_cDecommissioning Management~sq_cEffortAndDedicationStatusKPI`
+- `~sq_cDecommissioning Management~sq_cExecutionStatusKPI`
+- `~sq_cDecommissioning Management~sq_cGlobalStatusKPI`
+- `~sq_cDecommissioning Management~sq_cImpactId`
+- `~sq_cDecommissioning Management~sq_cNodeId`
+- `~sq_cDecommissioning Management~sq_cOwnerId`
+- `~sq_cDecommissioning Management~sq_cPriorityId`
+- `~sq_cDecommissioning Management~sq_cResourcesStatusKPI`
+- `~sq_cDecommissioning Management~sq_cRiskStatusKPI`
+- `~sq_cDecommissioning Management~sq_cScopeStatusKPI`
+- `~sq_cDecommissioning Management~sq_cVisibilityId`
+- `~sq_cDecommissioning Management~sq_cWorkFlowStatusId`
+- `~sq_cInfrastructure Node Management~sq_cAdminVLANId`
+- `~sq_cInfrastructure Node Management~sq_cArchitecutreTypeId`
+- `~sq_cInfrastructure Node Management~sq_cClusterTypeId`
+- `~sq_cInfrastructure Node Management~sq_cComboBoxRelNodes2Roles`
+- `~sq_cInfrastructure Node Management~sq_cCurrentSecurityLevelId`
+- `~sq_cInfrastructure Node Management~sq_cDataCenterLocationId`
+- `~sq_cInfrastructure Node Management~sq_cDeliveryStatusId`
+- `~sq_cInfrastructure Node Management~sq_cHardwareAdminVLANId`
+- `~sq_cInfrastructure Node Management~sq_cHardwareStatusId`
+- `~sq_cInfrastructure Node Management~sq_cHeatBeatVLANId`
+- `~sq_cInfrastructure Node Management~sq_cInventoryUpdaterId`
+- `~sq_cInfrastructure Node Management~sq_cMainDnsZoneId`
+- `~sq_cInfrastructure Node Management~sq_cMainEnvironmentId`
+- `~sq_cInfrastructure Node Management~sq_cMainProjectId`
+- `~sq_cInfrastructure Node Management~sq_cMainRoleId`
+- `~sq_cInfrastructure Node Management~sq_cMajorPatchLevelId`
+- `~sq_cInfrastructure Node Management~sq_cNodeTypeId`
+- `~sq_cInfrastructure Node Management~sq_cParentNodeId`
+- `~sq_cInfrastructure Node Management~sq_cProductionScopeId`
+- `~sq_cInfrastructure Node Management~sq_cRackLocationId`
+- `~sq_cInfrastructure Node Management~sq_cRequiredSecurityLevelId`
+- `~sq_cInfrastructure Node Management~sq_cRiskStatusId`
+- `~sq_cInfrastructure Node Management~sq_cSecurityClassId`
+- `~sq_cInfrastructure Node Management~sq_cSecurityDomainId`
+- `~sq_cInfrastructure Node Management~sq_cServiceManagerId`
+- `~sq_cInfrastructure Node Management~sq_cServiceVLANId`
+- `~sq_cInfrastructure Node Management~sq_cStorageVLANId`
+- `~sq_cInfrastructure Node Management~sq_cSubFormRelatedNodes`
+- `~sq_cInfrastructure Node Management~sq_cSubFormRepairsBasicList`
+- `~sq_cInfrastructure Node Management~sq_cSupplierId`
+- `~sq_cInfrastructure Node Management~sq_cSystemTypeId`
+- `~sq_cInfrastructure Node Management~sq_cVirtualDataCenterId`
+- `~sq_cInfrastructure Node Quick Management~sq_cDeliveryStatusId`
+- `~sq_cInfrastructure Node Quick Management~sq_cHardwareStatusId`
+- `~sq_cInfrastructure Node Quick Management~sq_cInventoryUpdaterId`
+- `~sq_cInfrastructure Node Quick Management~sq_cMainEnvironmentId`
+- `~sq_cInfrastructure Node Quick Management~sq_cMainProjectId`
+- `~sq_cInfrastructure Node Quick Management~sq_cMainRoleId`
+- `~sq_cInfrastructure Node Quick Management~sq_cProductionScopeId`
+- `~sq_cInfrastructure Node Quick Management~sq_cRackLocationId`
+- `~sq_cInfrastructure Node Quick Management~sq_cSecurityDomainId`
+- `~sq_cIssues & Risks Management~sq_cActionStatusId`
+- `~sq_cIssues & Risks Management~sq_cOwnerId`
+- `~sq_cIssues & Risks Management~sq_cOwnerTeamId`
+- `~sq_cIssues & Risks Management~sq_cProjectId`
+- `~sq_cIssues & Risks Management~sq_cRelationshipTypeId`
+- `~sq_cIssues & Risks Management~sq_cRiskTypeId`
+- `~sq_cIssues & Risks Management~sq_cSeverityStatusKPI`
+- `~sq_cMainMenu~sq_cSessionUserId`
+- `~sq_cPortfolio Management~sq_cBudgetStatusKPI`
+- `~sq_cPortfolio Management~sq_cBusinessAreaId`
+- `~sq_cPortfolio Management~sq_cComboBoxRelProjects2Environments`
+- `~sq_cPortfolio Management~sq_cEffortAndDedicationStatusKPI`
+- `~sq_cPortfolio Management~sq_cExecutionStatusKPI`
+- `~sq_cPortfolio Management~sq_cGlobalMaturityEvaluationId`
+- `~sq_cPortfolio Management~sq_cGlobalStatusKPI`
+- `~sq_cPortfolio Management~sq_cListViewRelProjects2Environments`
+- `~sq_cPortfolio Management~sq_cListViewStorageCapacity`
+- `~sq_cPortfolio Management~sq_cParentProjectId`
+- `~sq_cPortfolio Management~sq_cPriorityId`
+- `~sq_cPortfolio Management~sq_cProjectStatusId`
+- `~sq_cPortfolio Management~sq_cResourcesStatusKPI`
+- `~sq_cPortfolio Management~sq_cRiskStatusKPI`
+- `~sq_cPortfolio Management~sq_cScopeStatusKPI`
+- `~sq_cPortfolio Management~sq_cServiceCoverageId`
+- `~sq_cPortfolio Management~sq_cServiceManagerId`
+- `~sq_cPortfolio Management~sq_cSubFormCurrentIssues`
+- `~sq_cPortfolio Management~sq_cSubFormCurrentProvisioningProjects`
+- `~sq_cPortfolio Management~sq_cSubFormCurrentTasks`
+- `~sq_cPortfolio Management~sq_cVisibilityId`
+- `~sq_cPortfolio Quick Management~sq_cBudgetStatusKPI`
+- `~sq_cPortfolio Quick Management~sq_cBusinessAreaId`
+- `~sq_cPortfolio Quick Management~sq_cEffortAndDedicationStatusKPI`
+- `~sq_cPortfolio Quick Management~sq_cExecutionStatusKPI`
+- `~sq_cPortfolio Quick Management~sq_cGlobalMaturityEvaluationId`
+- `~sq_cPortfolio Quick Management~sq_cGlobalStatusKPI`
+- `~sq_cPortfolio Quick Management~sq_cParentProjectId`
+- `~sq_cPortfolio Quick Management~sq_cPriorityId`
+- `~sq_cPortfolio Quick Management~sq_cProjectStatusId`
+- `~sq_cPortfolio Quick Management~sq_cResourcesStatusKPI`
+- `~sq_cPortfolio Quick Management~sq_cRiskStatusKPI`
+- `~sq_cPortfolio Quick Management~sq_cScopeStatusKPI`
+- `~sq_cPortfolio Quick Management~sq_cServiceManagerId`
+- `~sq_cPortfolio Quick Management~sq_cVisibilityId`
+- `~sq_cProgress Management~sq_cOwnerId`
+- `~sq_cProgress Management~sq_cProjectId`
+- `~sq_cProgress Management~sq_cSubFormCurrentIssues`
+- `~sq_cProgress Management~sq_cSubFormCurrentTasks`
+- `~sq_cProgress Management~sq_cTeamId`
+- `~sq_cProvisioning Management~sq_cBudgetStatusKPI`
+- `~sq_cProvisioning Management~sq_cComboBoxProvisioningProjectName`
+- `~sq_cProvisioning Management~sq_cEffortAndDedicationStatusKPI`
+- `~sq_cProvisioning Management~sq_cExecutionStatusKPI`
+- `~sq_cProvisioning Management~sq_cGlobalStatusKPI`
+- `~sq_cProvisioning Management~sq_cImpactId`
+- `~sq_cProvisioning Management~sq_cOwnerId`
+- `~sq_cProvisioning Management~sq_cPriorityId`
+- `~sq_cProvisioning Management~sq_cProjectId`
+- `~sq_cProvisioning Management~sq_cResourcesStatusKPI`
+- `~sq_cProvisioning Management~sq_cRiskStatusKPI`
+- `~sq_cProvisioning Management~sq_cScopeStatusKPI`
+- `~sq_cProvisioning Management~sq_cSubFormProgressView`
+- `~sq_cProvisioning Management~sq_cVisibilityId`
+- `~sq_cRepairs Management~sq_cBudgetStatusKPI`
+- `~sq_cRepairs Management~sq_cDeliveredNodeId`
+- `~sq_cRepairs Management~sq_cEffortAndDedicationStatusKPI`
+- `~sq_cRepairs Management~sq_cExecutionStatusKPI`
+- `~sq_cRepairs Management~sq_cGlobalStatusKPI`
+- `~sq_cRepairs Management~sq_cImpactId`
+- `~sq_cRepairs Management~sq_cNodeId`
+- `~sq_cRepairs Management~sq_cOwnerId`
+- `~sq_cRepairs Management~sq_cPriorityId`
+- `~sq_cRepairs Management~sq_cResourcesStatusKPI`
+- `~sq_cRepairs Management~sq_cRiskStatusKPI`
+- `~sq_cRepairs Management~sq_cScopeStatusKPI`
+- `~sq_cRepairs Management~sq_cVisibilityId`
+- `~sq_cRepairs Management~sq_cWorkFlowStatusId`
+- `~sq_cTasks Management~sq_cBudgetStatusKPI`
+- `~sq_cTasks Management~sq_cEffortAndDedicationStatusKPI`
+- `~sq_cTasks Management~sq_cExecutionStatusKPI`
+- `~sq_cTasks Management~sq_cGlobalStatusKPI`
+- `~sq_cTasks Management~sq_cImpactId`
+- `~sq_cTasks Management~sq_cPriorityId`
+- `~sq_cTasks Management~sq_cProjectId`
+- `~sq_cTasks Management~sq_cRelationshipTypeId`
+- `~sq_cTasks Management~sq_cResourcesStatusKPI`
+- `~sq_cTasks Management~sq_cRiskStatusKPI`
+- `~sq_cTasks Management~sq_cScopeStatusKPI`
+- `~sq_cTasks Management~sq_cTaskCategoryId`
+- `~sq_cTasks Management~sq_cUpdaterId`
+- `~sq_cTasks Management~sq_cUpdaterTeamId`
+- `~sq_cTasks Management~sq_cVisibilityId`
+- `~sq_cTasks Management~sq_cWorkStreamId`
+- `~sq_c_ContactsHistoryView~sq_cTeamId`
+- `~sq_c_DecommissioningHistoryView~sq_cBudgetStatusKPI`
+- `~sq_c_DecommissioningHistoryView~sq_cExecutionStatusKPI`
+- `~sq_c_DecommissioningHistoryView~sq_cGlobalStatusKPI`
+- `~sq_c_DecommissioningHistoryView~sq_cImpactId`
+- `~sq_c_DecommissioningHistoryView~sq_cNodeId`
+- `~sq_c_DecommissioningHistoryView~sq_cOwnerId`
+- `~sq_c_DecommissioningHistoryView~sq_cPriorityId`
+- `~sq_c_DecommissioningHistoryView~sq_cResourcesStatusKPI`
+- `~sq_c_DecommissioningHistoryView~sq_cRiskStatusKPI`
+- `~sq_c_DecommissioningHistoryView~sq_cScopeStatusKPI`
+- `~sq_c_DecommissioningHistoryView~sq_cVisibilityId`
+- `~sq_c_DecommissioningHistoryView~sq_cWorkFlowStatusId`
+- `~sq_c_EntityData_WorkStreams~sq_cProjectId`
+- `~sq_c_IssuesHistoryView~sq_cActionStatusId`
+- `~sq_c_IssuesHistoryView~sq_cOwnerId`
+- `~sq_c_IssuesHistoryView~sq_cOwnerTeamId`
+- `~sq_c_IssuesHistoryView~sq_cProjectId`
+- `~sq_c_IssuesHistoryView~sq_cRelationshipTypeId`
+- `~sq_c_IssuesHistoryView~sq_cRiskTypeId`
+- `~sq_c_IssuesHistoryView~sq_cSeverityStatusKPI`
+- `~sq_c_NodeConfigurationManagement~sq_cAdminVLANId`
+- `~sq_c_NodeConfigurationManagement~sq_cArchitecutreTypeId`
+- `~sq_c_NodeConfigurationManagement~sq_cClusterTypeId`
+- `~sq_c_NodeConfigurationManagement~sq_cCpuTypeId`
+- `~sq_c_NodeConfigurationManagement~sq_cDeliveryStatusId`
+- `~sq_c_NodeConfigurationManagement~sq_cHardwareAdminVLANId`
+- `~sq_c_NodeConfigurationManagement~sq_cHardwareStatusId`
+- `~sq_c_NodeConfigurationManagement~sq_cHeartBeatVLANId`
+- `~sq_c_NodeConfigurationManagement~sq_cInventoryUpdaterId`
+- `~sq_c_NodeConfigurationManagement~sq_cMainEnvironmentId`
+- `~sq_c_NodeConfigurationManagement~sq_cMainProjectId`
+- `~sq_c_NodeConfigurationManagement~sq_cMainRoleId`
+- `~sq_c_NodeConfigurationManagement~sq_cNodeTypeId`
+- `~sq_c_NodeConfigurationManagement~sq_cParentNodeId`
+- `~sq_c_NodeConfigurationManagement~sq_cProductionScopeId`
+- `~sq_c_NodeConfigurationManagement~sq_cServiceManagerId`
+- `~sq_c_NodeConfigurationManagement~sq_cServiceVLANId`
+- `~sq_c_NodeConfigurationManagement~sq_cStorageVLANId`
+- `~sq_c_NodeConfigurationManagement~sq_cSupplierId`
+- `~sq_c_NodeConfigurationManagement~sq_cSystemTypeId`
+- `~sq_c_NodeDeliveryManagement~sq_cDeliveryStatusId`
+- `~sq_c_NodeDeliveryManagement~sq_cHardwareStatusId`
+- `~sq_c_NodeDeliveryManagement~sq_cInventoryUpdaterId`
+- `~sq_c_NodeDeliveryManagement~sq_cMainEnvironmentId`
+- `~sq_c_NodeDeliveryManagement~sq_cMainProjectId`
+- `~sq_c_NodeDeliveryManagement~sq_cMainRoleId`
+- `~sq_c_NodeDeliveryManagement~sq_cParentNodeId`
+- `~sq_c_NodeDeliveryManagement~sq_cProductionScopeId`
+- `~sq_c_NodeDeliveryManagement~sq_cServiceManagerId`
+- `~sq_c_NodeHistoryView~sq_cAdminVLANId`
+- `~sq_c_NodeHistoryView~sq_cArchitecutreTypeId`
+- `~sq_c_NodeHistoryView~sq_cAuditExceptionsLastApproverId`
+- `~sq_c_NodeHistoryView~sq_cClusterTypeId`
+- `~sq_c_NodeHistoryView~sq_cComboBoxRelNodes2Environments`
+- `~sq_c_NodeHistoryView~sq_cComboBoxRelNodes2Roles`
+- `~sq_c_NodeHistoryView~sq_cComboBoxRelProjects2Nodes`
+- `~sq_c_NodeHistoryView~sq_cCpuTypeId`
+- `~sq_c_NodeHistoryView~sq_cCurrentSecurityLevelId`
+- `~sq_c_NodeHistoryView~sq_cDataCenterLocationId`
+- `~sq_c_NodeHistoryView~sq_cDeliveryStatusId`
+- `~sq_c_NodeHistoryView~sq_cHardwareAdminVLANId`
+- `~sq_c_NodeHistoryView~sq_cHardwareStatusId`
+- `~sq_c_NodeHistoryView~sq_cHeatBeatVLANId`
+- `~sq_c_NodeHistoryView~sq_cInventoryUpdaterId`
+- `~sq_c_NodeHistoryView~sq_cListViewRelNodes2Environments`
+- `~sq_c_NodeHistoryView~sq_cListViewRelNodes2Roles`
+- `~sq_c_NodeHistoryView~sq_cListViewRelProjects2Nodes`
+- `~sq_c_NodeHistoryView~sq_cMainDnsZoneId`
+- `~sq_c_NodeHistoryView~sq_cMainEnvironmentId`
+- `~sq_c_NodeHistoryView~sq_cMainProjectId`
+- `~sq_c_NodeHistoryView~sq_cMainRoleId`
+- `~sq_c_NodeHistoryView~sq_cMajorPatchLevelId`
+- `~sq_c_NodeHistoryView~sq_cNodeTypeId`
+- `~sq_c_NodeHistoryView~sq_cParentNodeId`
+- `~sq_c_NodeHistoryView~sq_cProductionScopeId`
+- `~sq_c_NodeHistoryView~sq_cRackLocationId`
+- `~sq_c_NodeHistoryView~sq_cRequiredSecurityLevelId`
+- `~sq_c_NodeHistoryView~sq_cRiskStatusId`
+- `~sq_c_NodeHistoryView~sq_cSecurityClassId`
+- `~sq_c_NodeHistoryView~sq_cSecurityDomainId`
+- `~sq_c_NodeHistoryView~sq_cServiceManagerId`
+- `~sq_c_NodeHistoryView~sq_cServiceVLANId`
+- `~sq_c_NodeHistoryView~sq_cStorageVLANId`
+- `~sq_c_NodeHistoryView~sq_cSupplierId`
+- `~sq_c_NodeHistoryView~sq_cSystemTypeId`
+- `~sq_c_NodeHistoryView~sq_cVirtualDataCenterId`
+- `~sq_c_NodeTechnicalManagement~sq_cAdminVLANId`
+- `~sq_c_NodeTechnicalManagement~sq_cArchitecutreTypeId`
+- `~sq_c_NodeTechnicalManagement~sq_cClusterTypeId`
+- `~sq_c_NodeTechnicalManagement~sq_cCpuTypeId`
+- `~sq_c_NodeTechnicalManagement~sq_cDataCenterLocationId`
+- `~sq_c_NodeTechnicalManagement~sq_cDeliveryStatusId`
+- `~sq_c_NodeTechnicalManagement~sq_cHardwareAdminVLANId`
+- `~sq_c_NodeTechnicalManagement~sq_cHeartBeatVLANId`
+- `~sq_c_NodeTechnicalManagement~sq_cInventoryUpdaterId`
+- `~sq_c_NodeTechnicalManagement~sq_cMainDnsZoneId`
+- `~sq_c_NodeTechnicalManagement~sq_cMainEnvironmentId`
+- `~sq_c_NodeTechnicalManagement~sq_cMainProjectId`
+- `~sq_c_NodeTechnicalManagement~sq_cMainRoleId`
+- `~sq_c_NodeTechnicalManagement~sq_cMajorPatchLevelId`
+- `~sq_c_NodeTechnicalManagement~sq_cNodeStatusId`
+- `~sq_c_NodeTechnicalManagement~sq_cNodeTypeId`
+- `~sq_c_NodeTechnicalManagement~sq_cParentNodeId`
+- `~sq_c_NodeTechnicalManagement~sq_cProductionScopeId`
+- `~sq_c_NodeTechnicalManagement~sq_cRackLocationId`
+- `~sq_c_NodeTechnicalManagement~sq_cSecurityDomainId`
+- `~sq_c_NodeTechnicalManagement~sq_cServiceVLANId`
+- `~sq_c_NodeTechnicalManagement~sq_cStorageVLANId`
+- `~sq_c_NodeTechnicalManagement~sq_cSupplierId`
+- `~sq_c_NodeTechnicalManagement~sq_cSystemTypeId`
+- `~sq_c_NodeTechnicalManagement~sq_cVirtualDataCenterId`
+- `~sq_c_ProjectHistoryView~sq_cBudgetStatusKPI`
+- `~sq_c_ProjectHistoryView~sq_cBusinessAreaId`
+- `~sq_c_ProjectHistoryView~sq_cComboBoxRelProjects2Environments`
+- `~sq_c_ProjectHistoryView~sq_cEffortAndDedicationStatusKPI`
+- `~sq_c_ProjectHistoryView~sq_cExecutionStatusKPI`
+- `~sq_c_ProjectHistoryView~sq_cGlobalMaturityEvaluationId`
+- `~sq_c_ProjectHistoryView~sq_cGlobalStatusKPI`
+- `~sq_c_ProjectHistoryView~sq_cListViewRelProjects2Environments`
+- `~sq_c_ProjectHistoryView~sq_cListViewStorageCapacity`
+- `~sq_c_ProjectHistoryView~sq_cParentProjectId`
+- `~sq_c_ProjectHistoryView~sq_cPriorityId`
+- `~sq_c_ProjectHistoryView~sq_cProjectStatusId`
+- `~sq_c_ProjectHistoryView~sq_cResourcesStatusKPI`
+- `~sq_c_ProjectHistoryView~sq_cRiskStatusKPI`
+- `~sq_c_ProjectHistoryView~sq_cScopeStatusKPI`
+- `~sq_c_ProjectHistoryView~sq_cServiceCoverageId`
+- `~sq_c_ProjectHistoryView~sq_cServiceManagerId`
+- `~sq_c_ProjectHistoryView~sq_cSubFormCurrentIssues`
+- `~sq_c_ProjectHistoryView~sq_cSubFormCurrentTasks`
+- `~sq_c_ProjectHistoryView~sq_cVisibilityId`
+- `~sq_c_ProvisioningHistoryView~sq_cBudgetStatusKPI`
+- `~sq_c_ProvisioningHistoryView~sq_cEffortAndDedicationStatusKPI`
+- `~sq_c_ProvisioningHistoryView~sq_cExecutionStatusKPI`
+- `~sq_c_ProvisioningHistoryView~sq_cGlobalStatusKPI`
+- `~sq_c_ProvisioningHistoryView~sq_cImpactId`
+- `~sq_c_ProvisioningHistoryView~sq_cOwnerId`
+- `~sq_c_ProvisioningHistoryView~sq_cPriorityId`
+- `~sq_c_ProvisioningHistoryView~sq_cProjectId`
+- `~sq_c_ProvisioningHistoryView~sq_cResourcesStatusKPI`
+- `~sq_c_ProvisioningHistoryView~sq_cRiskStatusKPI`
+- `~sq_c_ProvisioningHistoryView~sq_cScopeStatusKPI`
+- `~sq_c_ProvisioningHistoryView~sq_cVisibilityId`
+- `~sq_c_ProvisioningProjectDetailsHistoryView~sq_cImpactId`
+- `~sq_c_ProvisioningProjectDetailsHistoryView~sq_cNodeId`
+- `~sq_c_ProvisioningProjectDetailsHistoryView~sq_cPriorityId`
+- `~sq_c_ProvisioningProjectDetailsHistoryView~sq_cRiskStatusKPI`
+- `~sq_c_ProvisioningProjectDetails_Notes~sq_cDeliveryStatusId`
+- `~sq_c_ProvisioningProjectDetails_Notes~sq_cMainEnvironmentId`
+- `~sq_c_ProvisioningProjectDetails_Notes~sq_cMainProjectId`
+- `~sq_c_ProvisioningProjectDetails_Notes~sq_cMainRoleId`
+- `~sq_c_ProvisioningProjectDetails_Notes~sq_cNodeId`
+- `~sq_c_ProvisioningProjectDetails_Notes~sq_cNodeStatusId`
+- `~sq_c_ProvisioningProjectsSummary~sq_cSubFormProgressView`
+- `~sq_c_RepairsHistoryView~sq_cBudgetStatusKPI`
+- `~sq_c_RepairsHistoryView~sq_cDeliveredNodeId`
+- `~sq_c_RepairsHistoryView~sq_cEffortAndDedicationStatusKPI`
+- `~sq_c_RepairsHistoryView~sq_cExecutionStatusKPI`
+- `~sq_c_RepairsHistoryView~sq_cGlobalStatusKPI`
+- `~sq_c_RepairsHistoryView~sq_cImpactId`
+- `~sq_c_RepairsHistoryView~sq_cNodeId`
+- `~sq_c_RepairsHistoryView~sq_cOwnerId`
+- `~sq_c_RepairsHistoryView~sq_cPriorityId`
+- `~sq_c_RepairsHistoryView~sq_cResourcesStatusKPI`
+- `~sq_c_RepairsHistoryView~sq_cRiskStatusKPI`
+- `~sq_c_RepairsHistoryView~sq_cScopeStatusKPI`
+- `~sq_c_RepairsHistoryView~sq_cVisibilityId`
+- `~sq_c_RepairsHistoryView~sq_cWorkFlowStatusId`
+- `~sq_c_TasksHistoryView~sq_cBudgetStatusKPI`
+- `~sq_c_TasksHistoryView~sq_cEffortAndDedicationStatusKPI`
+- `~sq_c_TasksHistoryView~sq_cExecutionStatusKPI`
+- `~sq_c_TasksHistoryView~sq_cGlobalStatusKPI`
+- `~sq_c_TasksHistoryView~sq_cImpactId`
+- `~sq_c_TasksHistoryView~sq_cPriorityId`
+- `~sq_c_TasksHistoryView~sq_cProjectId`
+- `~sq_c_TasksHistoryView~sq_cRelationshipTypeId`
+- `~sq_c_TasksHistoryView~sq_cResourcesStatusKPI`
+- `~sq_c_TasksHistoryView~sq_cRiskStatusKPI`
+- `~sq_c_TasksHistoryView~sq_cScopeStatusKPI`
+- `~sq_c_TasksHistoryView~sq_cTaskCategoryId`
+- `~sq_c_TasksHistoryView~sq_cUpdaterId`
+- `~sq_c_TasksHistoryView~sq_cUpdaterTeamId`
+- `~sq_c_TasksHistoryView~sq_cVisibilityId`
+- `~sq_c_TasksHistoryView~sq_cWorkStreamId`
+- `~sq_dTasks_ClosedProgressReport~sq_dImpactId`
+- `~sq_dTasks_ClosedProgressReport~sq_dPriorityId`
+- `~sq_dTasks_ClosedProgressReport~sq_dProjectId`
+- `~sq_dTasks_ClosedProgressReport~sq_dUpdaterId`
+- `~sq_dTasks_ClosedProgressReport~sq_dVisibilityId`
+- `~sq_dTasks_OpenedButPending~sq_dImpactId`
+- `~sq_dTasks_OpenedButPending~sq_dPriorityId`
+- `~sq_dTasks_OpenedButPending~sq_dProjectId`
+- `~sq_dTasks_OpenedButPending~sq_dTaskCategoryId`
+- `~sq_dTasks_OpenedButPending~sq_dVisibilityId`
+- `~sq_dTasks_ProgressReport_AssignedForThisWeek~sq_dImpactId`
+- `~sq_dTasks_ProgressReport_AssignedForThisWeek~sq_dPriorityId`
+- `~sq_dTasks_ProgressReport_AssignedForThisWeek~sq_dProjectId`
+- `~sq_dTasks_ProgressReport_AssignedForThisWeek~sq_dVisibilityId`
+- `~sq_dTasks_ProgressReport~sq_dImpactId`
+- `~sq_dTasks_ProgressReport~sq_dPriorityId`
+- `~sq_dTasks_ProgressReport~sq_dProjectId`
+- `~sq_dTasks_ProgressReport~sq_dUpdaterId`
+- `~sq_dTasks_ProgressReport~sq_dVisibilityId`
+- `~sq_fContacts Management`
+- `~sq_fInfrastructure Node Management`
+- `~sq_fInfrastructure Node Quick Management`
+- `~sq_fIssues & Risks Management`
+- `~sq_fPortfolio Management`
+- `~sq_fPortfolio Quick Management`
+- `~sq_fProgress Management`
+- `~sq_fProvisioning Management`
+- `~sq_fTasks Management`
+- `~sq_f_ContactsHistoryView`
+- `~sq_f_DecommissioningHistoryView`
+- `~sq_f_EntityData_BusinessAreas`
+- `~sq_f_EntityData_DataCenterLocations`
+- `~sq_f_EntityData_DnsZones`
+- `~sq_f_EntityData_Environments`
+- `~sq_f_EntityData_Networks`
+- `~sq_f_EntityData_ProductionScopes`
+- `~sq_f_EntityData_RackLocations`
+- `~sq_f_EntityData_Roles`
+- `~sq_f_EntityData_SecurityDomains`
+- `~sq_f_EntityData_Teams`
+- `~sq_f_EntityData_VirtualDataCenters`
+- `~sq_f_EntityData_WorkStreams`
+- `~sq_f_IssuesHistoryView`
+- `~sq_f_NodeConfigurationManagement`
+- `~sq_f_NodeDeliveryManagement`
+- `~sq_f_NodeExpandedFieldView_HbaLinksInfo`
+- `~sq_f_NodeExpandedFieldView_Notes`
+- `~sq_f_NodeExpandedFieldView_SecurityAuditReport`
+- `~sq_f_NodeExpandedFieldView_SystemAuditReport`
+- `~sq_f_NodeExpandedFieldView_SystemInformationDump`
+- `~sq_f_NodeHistoryExpandedFieldView_HbaLinksInfo`
+- `~sq_f_NodeHistoryExpandedFieldView_Notes`
+- `~sq_f_NodeHistoryExpandedFieldView_SecurityAuditReport`
+- `~sq_f_NodeHistoryExpandedFieldView_SystemAuditReport`
+- `~sq_f_NodeHistoryExpandedFieldView_SystemInformationDump`
+- `~sq_f_NodeHistoryView`
+- `~sq_f_NodeTechnicalManagement`
+- `~sq_f_ProjectHistoryView`
+- `~sq_f_ProvisioningHistoryView`
+- `~sq_f_RepairsHistoryView`
+- `~sq_f_TasksHistoryView`
+
+## Form (60)
+
+- `Contacts Management`
+- `Decommissioning Management`
+- `Infrastructure Node Management`
+- `Infrastructure Node Quick Management`
+- `Issues & Risks Management`
+- `MainMenu`
+- `Portfolio Management`
+- `Portfolio Quick Management`
+- `Printer Reports`
+- `Progress Management`
+- `Provisioning Management`
+- `Quick Reports`
+- `Repairs Management`
+- `Tasks Management`
+- `_ContactsHistoryView`
+- `_DecommissioningHistoryView`
+- `_EntityData_BusinessAreas`
+- `_EntityData_DataCenterLocations`
+- `_EntityData_DnsZones`
+- `_EntityData_Environments`
+- `_EntityData_Networks`
+- `_EntityData_ProductionScopes`
+- `_EntityData_RackLocations`
+- `_EntityData_Roles`
+- `_EntityData_SecurityDomains`
+- `_EntityData_Teams`
+- `_EntityData_VirtualDataCenters`
+- `_EntityData_WorkStreams`
+- `_GetRelatedNodes`
+- `_IssuesBasicList`
+- `_IssuesHistoryView`
+- `_NodeConfigurationManagement`
+- `_NodeDeliveryManagement`
+- `_NodeExpandedFieldView_HbaLinksInfo`
+- `_NodeExpandedFieldView_Notes`
+- `_NodeExpandedFieldView_SecurityAuditReport`
+- `_NodeExpandedFieldView_SystemAuditReport`
+- `_NodeExpandedFieldView_SystemInformationDump`
+- `_NodeHistoryExpandedFieldView_HbaLinksInfo`
+- `_NodeHistoryExpandedFieldView_Notes`
+- `_NodeHistoryExpandedFieldView_SecurityAuditReport`
+- `_NodeHistoryExpandedFieldView_SystemAuditReport`
+- `_NodeHistoryExpandedFieldView_SystemInformationDump`
+- `_NodeHistoryView`
+- `_NodeTechnicalManagement`
+- `_NodesBasicList`
+- `_NodesIntrinsicRelations`
+- `_ProjectHistoryView`
+- `_ProvisioningHistoryView`
+- `_ProvisioningProjectDetails`
+- `_ProvisioningProjectDetailsBasicList`
+- `_ProvisioningProjectDetailsHistoryView`
+- `_ProvisioningProjectDetails_Notes`
+- `_ProvisioningProjectsSummary`
+- `_RelProgressReports2IssuesBasicList`
+- `_RelProgressReports2TasksBasicList`
+- `_RepairsBasicList`
+- `_RepairsHistoryView`
+- `_TasksBasicList`
+- `_TasksHistoryView`
+
+## Report (4)
+
+- `Tasks_ClosedProgressReport`
+- `Tasks_OpenedButPending`
+- `Tasks_ProgressReport`
+- `Tasks_ProgressReport_AssignedForThisWeek`
+
+## VBA module (2)
+
+- `GlobalFunctions`
+- `GlobalQueryFunctions`
+
+## System table (5)
+
+- `MSysACEs`
+- `MSysAccessStorage`
+- `MSysObjects`
+- `MSysQueries`
+- `MSysRelationships`
+
