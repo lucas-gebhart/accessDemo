@@ -1,0 +1,68 @@
+<!doctype html>
+<!--
+  Reconstruction of the OpenSLIM Access 2003 "MainMenu" switchboard.
+  Not a screenshot: the form's binary layout cannot be read outside Access, so this is drawn
+  from the object inventory in the .mdb (form names, the DoCmd.OpenForm targets in the VBA
+  modules) and Access 2003's standard chrome.
+-->
+<meta charset="utf-8">
+<style>
+  body { margin: 0; background: #6b7f9e; font-family: Tahoma, Verdana, sans-serif; font-size: 11px; }
+  .window { width: 720px; margin: 24px; border: 2px outset #d4d0c8; background: #d4d0c8; }
+  .titlebar { background: linear-gradient(#0a246a, #3a6ea5); color: #fff; font-weight: bold;
+              padding: 3px 5px; display: flex; justify-content: space-between; }
+  .titlebar span.btns { font-family: Marlett, monospace; letter-spacing: 2px; }
+  .menubar { border-bottom: 1px solid #808080; padding: 2px 6px; }
+  .menubar b { font-weight: normal; margin-right: 12px; }
+  .menubar u { text-decoration: underline; }
+  .body { background: #d4d0c8; padding: 14px; }
+  .banner { background: #0a246a; color: #fff; padding: 10px 14px; margin-bottom: 12px; }
+  .banner h1 { margin: 0; font-size: 18px; }
+  .banner p { margin: 2px 0 0; font-size: 10px; color: #b8c6e0; }
+  .cols { display: flex; gap: 16px; }
+  fieldset { border: 1px solid #808080; margin: 0; flex: 1; padding: 10px 12px 12px; }
+  legend { font-weight: bold; padding: 0 4px; }
+  button { display: block; width: 100%; margin-bottom: 6px; padding: 4px; text-align: left;
+           font-family: inherit; font-size: 11px; border: 2px outset #d4d0c8; background: #d4d0c8; }
+  .status { border-top: 1px solid #fff; background: #d4d0c8; padding: 3px 6px; color: #404040;
+            display: flex; justify-content: space-between; }
+  .sunken { border: 2px inset #d4d0c8; background: #fff; padding: 2px 4px; }
+</style>
+<div class="window">
+  <div class="titlebar"><span>MainMenu : Form</span><span class="btns">_ □ ×</span></div>
+  <div class="menubar"><b><u>F</u>ile</b><b><u>E</u>dit</b><b><u>V</u>iew</b><b><u>I</u>nsert</b><b>F<u>o</u>rmat</b><b><u>R</u>ecords</b><b><u>T</u>ools</b><b><u>W</u>indow</b><b><u>H</u>elp</b></div>
+  <div class="body">
+    <div class="banner">
+      <h1>OpenSLIM</h1>
+      <p>Open Simple &amp; Lightweight Infrastructure Manager &nbsp;·&nbsp; v3.73b0</p>
+    </div>
+    <div class="cols">
+      <fieldset>
+        <legend>Infrastructure</legend>
+        <button>Infrastructure Node Management</button>
+        <button>Infrastructure Node Quick Management</button>
+        <button>Provisioning Management</button>
+        <button>Repairs Management</button>
+        <button>Decommissioning Management</button>
+      </fieldset>
+      <fieldset>
+        <legend>Service &amp; Delivery</legend>
+        <button>Portfolio Management</button>
+        <button>Portfolio Quick Management</button>
+        <button>Tasks Management</button>
+        <button>Progress Management</button>
+        <button>Issues &amp; Risks Management</button>
+        <button>Contacts Management</button>
+      </fieldset>
+      <fieldset>
+        <legend>Reporting</legend>
+        <button>Quick Reports</button>
+        <button>Printer Reports</button>
+        <div style="margin-top:18px">Session user:</div>
+        <div class="sunken">CVEIRA</div>
+        <button style="margin-top:14px">Exit</button>
+      </fieldset>
+    </div>
+  </div>
+  <div class="status"><span>Form View</span><span>NUM</span></div>
+</div>
