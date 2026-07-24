@@ -1,16 +1,17 @@
 import { z } from "zod";
 
 const numeric = z.coerce.number().int().nonnegative();
+const len = (max: number) => `must be at most ${max} characters`;
 
 /**
  * Mirrors the editable fields of the Access "Infrastructure Node Management" form.
  * Defaults match the DEFAULT constraints of the original SQL Server table.
  */
 export const nodeSchema = z.object({
-  node_name: z.string().trim().min(1, "Node name is required").max(100),
-  node_description: z.string().trim().max(100).optional().or(z.literal("")),
-  node_serial_number: z.string().trim().min(1).max(200).default("Unknown"),
-  node_model: z.string().trim().min(1).max(100).default("Unknown"),
+  node_name: z.string().trim().min(1, "Node name is required").max(100, len(100)),
+  node_description: z.string().trim().max(100, len(100)).optional().or(z.literal("")),
+  node_serial_number: z.string().trim().min(1).max(200, len(200)).default("Unknown"),
+  node_model: z.string().trim().min(1).max(100, len(100)).default("Unknown"),
   node_is_active: z.coerce.boolean().default(true),
   node_type_id: numeric,
   system_type_id: numeric,
@@ -67,11 +68,27 @@ const CHECKBOX_FIELDS = NODE_FIELDS.filter(
 );
 
 /** HTML checkboxes are absent from FormData when unchecked; normalise to booleans. */
-export function parseNodeForm(formData: FormData) {
-  const raw: Record<string, unknown> = {};
+export function nodeFormValues(formData: FormData): Record<string, string | boolean> {
+  const raw: Record<string, string | boolean> = {};
   for (const field of NODE_FIELDS) {
     const value = formData.get(field);
-    raw[field] = CHECKBOX_FIELDS.includes(field) ? value === "on" || value === "true" : value;
+    raw[field] = CHECKBOX_FIELDS.includes(field)
+      ? value === "on" || value === "true"
+      : String(value ?? "");
   }
-  return nodeSchema.safeParse(raw);
+  return raw;
+}
+
+export function parseNodeForm(formData: FormData) {
+  return nodeSchema.safeParse(nodeFormValues(formData));
+}
+
+/** "node_model: Too big…" — on a form this wide, the field name is the useful part. */
+export function describeIssues(error: z.ZodError): string {
+  return error.issues
+    .map((issue) => {
+      const field = issue.path.join(".");
+      return field ? `${field}: ${issue.message}` : issue.message;
+    })
+    .join("; ");
 }

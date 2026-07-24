@@ -117,7 +117,7 @@ function Selects({
 export function NodeForm({
   action,
   lookups,
-  values = {},
+  values: initialValues = {},
   submitLabel,
   cancelHref,
 }: {
@@ -128,9 +128,12 @@ export function NodeForm({
   cancelHref: string;
 }) {
   const [state, formAction, pending] = useActionState(action, {});
+  // A rejected submission echoes back what the user typed; the key re-mounts the uncontrolled
+  // inputs so their defaultValues are applied again instead of keeping the browser's state.
+  const values = { ...initialValues, ...(state.values as Partial<NodeInput> | undefined) };
 
   return (
-    <form action={formAction} className="space-y-4">
+    <form action={formAction} className="space-y-4" key={state.error ?? "clean"}>
       {state.error && (
         <p className="rounded border border-red-300 bg-red-50 px-3 py-2 text-sm text-red-700">
           {state.error}

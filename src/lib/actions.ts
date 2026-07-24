@@ -4,9 +4,16 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
 import { pool, query } from "@/lib/db";
-import { NODE_FIELDS, parseNodeForm, type NodeInput } from "@/lib/nodeForm";
+import {
+  NODE_FIELDS,
+  describeIssues,
+  nodeFormValues,
+  parseNodeForm,
+  type NodeInput,
+} from "@/lib/nodeForm";
 
-export type ActionState = { error?: string };
+/** `values` is echoed back so a rejected form re-renders with what the user typed. */
+export type ActionState = { error?: string; values?: Record<string, string | boolean> };
 
 function columnList(input: NodeInput) {
   const columns = NODE_FIELDS.filter((field) => input[field] !== undefined);
@@ -17,7 +24,7 @@ function columnList(input: NodeInput) {
 export async function createNode(_state: ActionState, formData: FormData): Promise<ActionState> {
   const parsed = parseNodeForm(formData);
   if (!parsed.success) {
-    return { error: parsed.error.issues.map((issue) => issue.message).join("; ") };
+    return { error: describeIssues(parsed.error), values: nodeFormValues(formData) };
   }
   const { columns, values } = columnList(parsed.data);
   const placeholders = columns.map((_, index) => `$${index + 1}`).join(", ");
@@ -37,7 +44,7 @@ export async function updateNode(
 ): Promise<ActionState> {
   const parsed = parseNodeForm(formData);
   if (!parsed.success) {
-    return { error: parsed.error.issues.map((issue) => issue.message).join("; ") };
+    return { error: describeIssues(parsed.error), values: nodeFormValues(formData) };
   }
   const { columns, values } = columnList(parsed.data);
   const assignments = columns.map((column, index) => `${column} = $${index + 1}`).join(", ");
